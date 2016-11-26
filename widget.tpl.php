@@ -1,5 +1,5 @@
 <div class="mdwp_calendar">
-    <?php $index = 0; foreach ($dates as $date => $count): $index++;?>
+    <?php $index = 0; foreach ($data as $date => $count):?>
         <?php if ($index === 0):?>
             <div class="mdwp_calendar_row">
         <?php elseif ($index % 7 === 0):?>
@@ -7,6 +7,7 @@
             <div class="mdwp_calendar_row">
         <?php endif;?>
         <div class="mdwp_calendar_block"><span class="<?= $count > 0 ? 'mdwp_calendar_block_active' : '' ?>" title="<?= $date ?>"></span></div>
+        <?php $index++; ?>
     <?php endforeach;?>
     </div>
 </div>
@@ -36,7 +37,7 @@
 .mdwp_calendar_block span {
     display: block;
     background: #d0d0d0;
-    margin: 0 2px;
+    margin: 2px;
     height: 20px;
 }
 .mdwp_calendar_block_active {
