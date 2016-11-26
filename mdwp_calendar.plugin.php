@@ -1,4 +1,11 @@
 <?php
+/*
+Plugin Name: Mafu's WP Calendar Widget
+Description: A calendar that shows the frequency of posts
+Author: Matthew Dawkins
+Version: 0.1
+*/
+
 class MDWP_Calendar extends WP_Widget {
   public function __construct() {
     parent::__construct('mdwp_calendar', 'Mafu\'s Calendar Widget', ['description' => 'Calendar widget that shows frequency of posts']);
