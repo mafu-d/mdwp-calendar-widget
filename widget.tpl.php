@@ -40,7 +40,7 @@
     margin: 2px;
     height: 20px;
 }
-.mdwp_calendar_block_active {
+.mdwp_calendar_block span.mdwp_calendar_block_active {
     background: #3060d0;
 }
 </style>
