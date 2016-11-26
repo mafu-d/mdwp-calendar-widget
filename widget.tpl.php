@@ -38,13 +38,14 @@
     padding: 0;
     height: 20px;
 }
-.mdwp_calendar_block span {
+.mdwp_calendar_block span,
+.mdwp_calendar_block a {
     display: block;
     background: #d0d0d0;
     margin: 2px;
     height: 20px;
 }
-.mdwp_calendar_block span.mdwp_calendar_block_active {
+.mdwp_calendar_block .mdwp_calendar_block_active {
     background: #30d060;
 }
 </style>
