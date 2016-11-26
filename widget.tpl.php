@@ -6,7 +6,11 @@
             </div>
             <div class="mdwp_calendar_row">
         <?php endif;?>
-        <div class="mdwp_calendar_block"><span class="<?= $count > 0 ? 'mdwp_calendar_block_active' : '' ?>" title="<?= $date ?>"></span></div>
+        <?php if ($count > 0): ?>
+            <div class="mdwp_calendar_block"><a href="<?= get_day_link(date('Y', $date), date('m', $date), date('d', $date)) ?>" class="mdwp_calendar_block_active" title="<?= $date ?>"></a></div>
+        <?php else: ?>
+            <div class="mdwp_calendar_block"><span title="<?= $date ?>"></span></div>
+        <?php endif; ?>
         <?php $index++; ?>
     <?php endforeach;?>
     </div>
