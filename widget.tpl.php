@@ -7,7 +7,7 @@
             <div class="mdwp_calendar_row">
         <?php endif;?>
         <?php if ($count > 0): ?>
-            <div class="mdwp_calendar_block"><a href="<?= get_day_link(date('Y', $date), date('m', $date), date('d', $date)) ?>" class="mdwp_calendar_block_active" title="<?= $date ?>"></a></div>
+            <div class="mdwp_calendar_block"><a href="<?= get_day_link(date('Y', strtotime($date)), date('m', strtotime($date)), date('d', strtotime($date))) ?>" class="mdwp_calendar_block_active" title="<?= $date ?>"></a></div>
         <?php else: ?>
             <div class="mdwp_calendar_block"><span title="<?= $date ?>"></span></div>
         <?php endif; ?>
