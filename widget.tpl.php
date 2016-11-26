@@ -41,6 +41,6 @@
     height: 20px;
 }
 .mdwp_calendar_block span.mdwp_calendar_block_active {
-    background: #3060d0;
+    background: #30d060;
 }
 </style>
