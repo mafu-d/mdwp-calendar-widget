@@ -28,7 +28,7 @@ class MDWP_Calendar extends WP_Widget {
         $data[date('Y-m-d', $date)] = 0;
     }
     // Get counts per day
-    $result = $wpdb->get_results("SELECT date(post_date) as post_day, count(ID) as post_count from {$wpdb->posts} WHERE post_status = 'publish' and post_date > ''{$startDateDate}' GROUP BY post_day", OBJECT_K);
+    $result = $wpdb->get_results("SELECT date(post_date) as post_day, count(ID) as post_count from {$wpdb->posts} WHERE post_status = 'publish' and post_date > '{$startDateDate}' GROUP BY post_day", OBJECT_K);
     foreach ($result as $row) {
         $data[$row->post_day] = $row->post_count;
     }
